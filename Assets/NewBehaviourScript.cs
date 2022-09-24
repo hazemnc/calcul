@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+      public int a,b,result;
+    public void sum(){
+        result=a+b;
+        debug.log(result);
+    } 
+    public void prod(){
+        result=a*b;
+        debug.log(result);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public void divi(){
+        if(b==0){
+            debug.log("erreur");}
+            else{
+                result= a / b;
+                debug.log(result);
+            }
+        }
 }
